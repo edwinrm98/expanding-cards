@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    transition: .8s;
+}
+
+body {
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(152, 214, 238);
+}
+
+.cards {
+    display: flex;
+    width: 80vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    background-size: cover;
+    flex: 0.4;
+    height: 80vh;
+    border-radius: 50px;
+    margin-right: 3vw;
+    position: relative;
+    background-position: center;
+    overflow: hidden;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover {
+    flex-grow: 3;
+}
+
+h1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0 50px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: white;
+    font-size: 1.8rem;
+    width: 100%;
+    opacity: 0;
+    background-image: linear-gradient(to top, rgb(0,0,0), rgba(0,0,0,0));
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.card1:hover h1, .card2:hover h1, .card3:hover h1, .card4:hover h1, .card5:hover h1 {
+    opacity: 1;
+}
+
+.card1 {background-image: url("./images/dubai.jpg");}
+.card2 {background-image: url("./images/greec.jpg");}
+.card3 {background-image: url("./images/maldives.jpg");}
+.card4 {background-image: url("./images/new_york.jpg");}
+.card5 {background-image: url("./images/tokyo.jpg");}
